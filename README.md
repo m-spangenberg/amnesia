@@ -20,37 +20,38 @@ AMNESIA was put together during the [2020 Covid-19 Lockdown](https://en.wikipedi
 ## Version History
 
 * 0.0.1
-    * Initial Deployment
+    * Initial Deployment, Hello World!
 
 ## Roadmap
 
 Some short term goals to help make AMNESIA more usable.
 
-Front End
+#### Front End
 
-- [ ] Rework Interface: Simple, Clean, Responsive
+- [ ] Rework Interface: Minimal, Clean, Responsive
+- [ ] Multi-Room Landing: `EVENTS | AREAS | CONCERNS | INTERESTS`
 - [ ] Text Fade: Chat messages slowly disappear
 - [ ] Moderator Overlay: Heatmaps and Session IDs, Timestamps
 - [ ] Dark Mode
 
-General Chat Commands
+#### General Chat Commands
 
 - [ ] Colour Codes: change text to predetermined colour -- `!CHAT|COLOURCODE`
 - [ ] Region Codes: enable in-line region code -- `!CHAT|REGION|NAME`
 - [ ] ID Codes: enable random user id for session -- `!CHAT|ID|STATE`
 
-Abuse Prevention
+#### Abuse Mitigation
 
 - [ ] Auto Ban by IP
 - [ ] Auto Rate Limit by IP
 - [ ] Ban Timers
 - [ ] Ban Redirect
 
-Moderation Tools
+#### Moderation Tools
 
-- [ ] Moderator Tokens -- !SECRETTOKEN|COMMANDS
-- [ ] Global Rate-Limiting -- !SECRETTOKEN|SLOW|RATE
-- [ ] Manual Ban -- !SECRETTOKEN|BAN|SESSIONID|TIME|REASON
+- [ ] Moderator Tokens: elevates user to moderator -- `!SECRETTOKEN|COMMANDS`
+- [ ] Global Rate-Limiting: slows down global chat -- `!SECRETTOKEN|SLOW|RATE`
+- [ ] Manual Ban: targets an offending user directly -- `!SECRETTOKEN|BAN|SESSIONID|TIME|REASON`
 
 ## License
 
