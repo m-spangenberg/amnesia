@@ -14,7 +14,7 @@
 
    <!--100 Users Maximum / Room Full Notice Redirect-->
    
-   <body class="bg-gray-300 font-sans leading-normal tracking-normal">
+   <body class="bg-gray-300 font-sans leading-normal tracking-normal max-w-full sm:max-w-full md:max-w-full lg:max-w-full xl:max-w-full">
 
    <!--Chat Bar-->  
    <div class="fixed content-center bg-gray-300 top-0 py-3 px-4 w-full md:w-full sm:w-full lg:w-full xl:w-full shadow-lg z-50">
@@ -38,17 +38,9 @@
    </div>
 
    <!--ChatArea-->
-   <div id="chatDOM" class="m-1 py-3 px-4 bg-gray-300 overflow-x-auto scrolling-touch text-gray-500 select-none z-40">
-   
-   <!--MOTD-->
-   <div class="relative bg-gray-300 px-4 py-3 pt-16 select-none z-30" role="alert">
-     <p class="font-bold text-center text-gray-500">Message Of The Day 🎈</p>
-     <p class="text-sm text-center text-gray-500">Speak freely, but be mindful of your manners</p>
-   </div>
+   <div id="chatroom" class="w-screen absolute bottom-0 px-4 pb-16 overflow-y-auto scrolling-touch select-none z-40">
       
-   <!--ChatText-->
-   <ul id="messages" class="absolute overflow-auto bottom-0 pb-16 z-20">
-   </ul>
+    <!--ChatText-->
 
    </div>
 
@@ -57,7 +49,7 @@
        <div class="flex">
          <form action="" class="w-full md:w-full sm:w-full lg:w-full xl:w-full">
             <div class="fixedbg-gray-300 ">
-            <input id="chatBar" class="w-full md:w-full sm:w-full lg:w-full xl:w-full bg-white focus:outline-none focus:shadow-outline border placeholder-gray-300 text-gray-300 focus:text-gray-600 rounded-lg px-4 block appearance-none leading-normal overflow-scroll" type="text" autocomplete="off" placeholder="say something...">
+            <input id="chatBar" class="w-full md:w-full sm:w-full lg:w-full xl:w-full bg-white focus:outline-none focus:shadow-outline border placeholder-gray-300 text-gray-300 focus:text-gray-600 rounded-lg px-4 block appearance-none leading-normal overflow-scroll" required type="text" autocomplete="off" placeholder="say something...">
          </div>
          </form>
        </div>
