@@ -2,7 +2,7 @@
 
 A forgetful chat room with no usernames and no long term memory.
 
-![Emulated mobile screenshot showing session activity](img/about/amnesia-0.0.1-screenshot.png)
+![Emulated mobile screenshot showing session activity](public/img/about/amnesia-0.0.1-screenshot.png)
 
 ## Description
 
