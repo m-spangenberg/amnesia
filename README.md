@@ -6,7 +6,7 @@ A forgetful chat room with no usernames and no long term memory.
 
 ## Description
 
-AMNESIA was put together during the [2020 Covid-19 Lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Namibia) as a WebSocket learning exercise and allows anonymous discourse for up to 100 users at a time. Beware, it does not have any abuse protection in place at the moment. Please treat others as you would treat yourself and use your better judgement when speaking to strangers on the internet.
+AMNESIA was put together during the [2020 Covid-19 Lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Namibia) as a WebSocket learning exercise and allows anonymous discourse. Beware, it does not have any abuse protection in place at the moment.
 
 ## Getting Started
 
@@ -29,22 +29,26 @@ Some short term goals to help make AMNESIA more usable.
 #### Front End
 
 - [ ] Rework Interface: Minimal, Clean, Responsive
-- [ ] Multi-Room Landing: `EVENTS | AREAS | CONCERNS | INTERESTS`
+- [ ] Multi-Room Landing: `EVENTS | AREAS | INTERESTS`
 - [ ] Text Fade: Chat messages slowly disappear
-- [ ] Moderator Overlay: Heatmaps and Session IDs, Timestamps
+- [ ] Moderator Overlay: Heatmaps and Session IDs
 - [ ] Dark Mode
 
 #### General Chat Commands
 
-- [ ] Colour Codes: change text to predetermined colour -- `!CHAT|COLOURCODE`
+- [ ] Colour Codes: change text to predetermined colour -- `!CHAT|TEXT|COLOUR`
 - [ ] Region Codes: enable in-line region code -- `!CHAT|REGION|NAME`
 - [ ] ID Codes: enable random user id for session -- `!CHAT|ID|STATE`
 
 #### Abuse Mitigation
 
 - [ ] Auto Ban by IP
-- [ ] Auto Rate Limit by IP
-- [ ] Ban Timers
+- [ ] Ban Cooldown Timers
+
+#### Service
+
+- [ ] Room User Limit
+- [ ] Room Full Redirect
 - [ ] Ban Redirect
 
 #### Moderation Tools
