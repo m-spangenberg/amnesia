@@ -32,7 +32,6 @@ Some short term goals to help make AMNESIA more usable.
 - [ ] Multi-Room Landing: `EVENTS | AREAS | INTERESTS`
 - [ ] Text Fade: Chat messages slowly disappear
 - [ ] Moderator Overlay: Heatmaps and Session IDs
-- [ ] Dark Mode
 
 #### General Chat Commands
 
