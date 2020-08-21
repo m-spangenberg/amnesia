@@ -4,6 +4,8 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const namegen = require('./namegenerator');
 
+const connectionsLimit = 100
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
@@ -12,6 +14,13 @@ app.use(express.static(__dirname + '/public'));
 
 
 io.sockets.on('connection', function (socket) {
+
+  if (io.engine.clientsCount > connectionsLimit) {
+    socket.emit('err', {message: 'room full'})
+    socket.disconnect()
+    
+    return
+  }
 
   const userCount = io.sockets.server.engine.clientsCount;
   io.emit('userCount', userCount);
@@ -32,6 +41,8 @@ io.sockets.on('connection', function (socket) {
   
   const nickname = thisUser.userGN;
   const nicknamecolour = thisUser.userCL;
+
+  // handle userlist for session
 
   socket.broadcast.emit('notice message', '> ' + nickname + ' has entered the chat...');
 

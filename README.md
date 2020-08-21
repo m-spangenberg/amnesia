@@ -6,7 +6,7 @@ A forgetful chat room with no usernames and no long term memory.
 
 ## Description
 
-AMNESIA was put together during the [2020 Covid-19 Lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Namibia) as a WebSocket learning exercise and allows anonymous discourse. Beware, it does not have any abuse protection in place at the moment.
+AMNESIA is a small anonymous chatroom project put together during the [2020 Covid-19 Lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Namibia) as a WebSocket learning exercise.
 
 ## Getting Started
 
@@ -28,16 +28,18 @@ Some short term goals to help make AMNESIA more usable.
 
 #### Front End
 
-- [ ] Rework Interface: Minimal, Clean, Responsive
+- [X] Darkmode
+- [X] Rework Interface: Minimal, Clean, Responsive
 - [ ] Multi-Room Landing: `EVENTS | AREAS | INTERESTS`
 - [ ] Text Fade: Chat messages slowly disappear
+- [ ] BUG: Fix Scrolling!
 - [ ] Moderator Overlay: Heatmaps and Session IDs
 
 #### General Chat Commands
 
-- [ ] Colour Codes: change text to predetermined colour -- `!CHAT|TEXT|COLOUR`
-- [ ] Region Codes: enable in-line region code -- `!CHAT|REGION|NAME`
-- [ ] ID Codes: enable random user id for session -- `!CHAT|ID|STATE`
+- [X] Colour Codes: change user id to predetermined colour
+- [ ] Region Codes: enable in-line region code
+- [X] ID Codes: enable random user id for session
 
 #### Abuse Mitigation
 
@@ -46,7 +48,7 @@ Some short term goals to help make AMNESIA more usable.
 
 #### Service
 
-- [ ] Room User Limit
+- [X] Room User Limit
 - [ ] Room Full Redirect
 - [ ] Ban Redirect
 
