@@ -17,15 +17,15 @@ $(function () {
       const thismessage = msg.msg;
       const now = new Date();
       const thismoment = now.toLocaleTimeString();
-      // handle this server side and pass through a string
+      // handle this server side
       $("#chatroom").append("<div class=\"flex mx-4 mb-1\"><div><p class=\"text-sm text-gray-600\">" + thismessage + "</p><p class=\"inline text-left text-xs text-gray-500 mt-1\">" + thismoment + "<p class=\"inline ml-2 mr-2 text-xs text-gray-500\">|</p><div class=\"inline rounded-full py-0 px-2 " + thisnicknamecolour + " text-gray-200 text-xs\">" + thisnickname + "</div>" + "</p></div></div>");
    });
 
    socket.on('notice message', function(noticemsg){
       const now = new Date();
       const thismoment = now.toLocaleTimeString();
-      // handle this server side and pass through a string
-      $("#chatroom").append("<div class=\"flex mx-4 mb-1\"><div><p class=\"text-sm text-gray-600\">" + noticemsg + "</p><p class=\"inline text-left text-xs text-gray-500 mt-1\">" + thismoment + "<p class=\"inline ml-2 mr-2 text-xs text-gray-500\">|</p><div class=\"inline rounded-full py-0 px-2 bg-gray-700 text-gray-200 text-xs\"> room </div>" + "</p></div></div>");
+      // handle this server side
+      $("#chatroom").append("<div class=\"flex mx-4 mb-1\"><div><p class=\"text-sm text-gray-600\">" + noticemsg + "</p><p class=\"inline text-left text-xs text-gray-500 mt-1\">" + thismoment + "<p class=\"inline ml-2 mr-2 text-xs text-gray-500\">|</p><div class=\"inline rounded-full py-0 px-2 bg-gray-800 text-gray-200 text-xs\"> room </div></p></div></div>");
    })
 
    socket.on('userCount', function(data){

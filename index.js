@@ -27,7 +27,7 @@ io.sockets.on('connection', function (socket) {
 
   thisUser['userID'] = socket.id;
   thisUser['userIP'] = userAddress.address;
-  thisUser['userGN'] = namegen.randomNameGenerator();
+  thisUser['userGN'] = namegen.randomNameGenerator(); // check that name doesn't already exist
   thisUser['userCL'] = namegen.randomColourGrabber();
   
   const nickname = thisUser.userGN;
