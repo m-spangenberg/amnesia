@@ -3,6 +3,7 @@ const app = require('express')();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const namegen = require('./namegenerator');
+const sessionUsers = [];
 
 const connectionsLimit = 100
 
@@ -52,7 +53,8 @@ io.sockets.on('connection', function (socket) {
   const nicknamecolour = thisUser.userCL;
 
   // handle userlist for session
-
+  sessionUsers.push(thisUser);
+  
   socket.broadcast.emit('notice message', '> ' + nickname + ' has entered the chat...');
 
   socket.on('chat message', (msg) => {
@@ -64,12 +66,23 @@ io.sockets.on('connection', function (socket) {
   });
 
   socket.on('disconnect', () => {
+    removeUserlist(thisUser);
+    console.log(sessionUsers);
     socket.broadcast.emit('notice message', '> ' + nickname + ' has left the chat...');
     const userCount = io.sockets.server.engine.clientsCount;
     io.emit('userCount', userCount);
   });
 
 });
+
+// Removes users from the session on disconnect
+function removeUserlist(thisUser) {
+  for (var i =0; i < sessionUsers.length; i++)
+   if (sessionUsers[i].userID === thisUser.userID) {
+      sessionUsers.splice(i,1);
+      break;
+   }
+}
 
 /*
 // clean this up and move it to an external module
