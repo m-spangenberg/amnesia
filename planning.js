@@ -1,8 +1,3 @@
-// enforce single socket per ip
-
-// set and enforce global socket limit
-
-
 /*
 MODTOKENS
 ---

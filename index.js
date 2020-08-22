@@ -12,6 +12,15 @@ app.get('/', (req, res) => {
 
 app.use(express.static(__dirname + '/public'));
 
+app.use(function(req, res) {
+ res.status(400);
+res.sendFile((__dirname + '/public/404.html'));
+});
+
+app.use(function(error, req, res, next) {
+  res.status(500);
+res.sendFile((__dirname + '/public/500.html'));
+});
 
 io.sockets.on('connection', function (socket) {
 
@@ -67,7 +76,6 @@ io.sockets.on('connection', function (socket) {
 ${}
 <div><p class="text-sm text-gray-600">w</p><p class="inline text-left text-xs text-gray-400 mt-1">4:03:13 PM</p><p class="inline ml-2 mr-2 text-xs text-gray-400">|</p><div class="inline rounded-full py-0 px-2 bg-green-500 text-gray-200 text-xs">nickname</div><p></p></div>
 */
-
 
 http.listen(3000, () => {
   console.log('Server Started: Listening on port *:3000');

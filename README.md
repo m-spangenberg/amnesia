@@ -1,6 +1,6 @@
 # AMNESIA CHAT
 
-A forgetful chat room with no usernames and no long term memory.
+A forgetful chat room with no long term memory.
 
 ![Emulated mobile screenshot showing session activity](public/img/about/amnesia-0.0.1-screenshot.png)
 
@@ -10,11 +10,13 @@ AMNESIA is a small anonymous chatroom project put together during the [2020 Covi
 
 ## Getting Started
 
+The front was put together with only the most basic of Tailwind CSS. I did consider using Bulma or Tachyons and might try them out depending on which direction this project goes in. This is also my first project using any JavaScript, Node.js, Express.js and Socket.io.
+
 ### Dependencies
 
 * [Tailwind CSS](https://tailwindcss.com/)
 * [Node.js](https://nodejs.org/)
-* [Express](https://expressjs.com/)
+* [Express.js](https://expressjs.com/)
 * [Socket.io](https://socket.io/)
 
 ## Version History
@@ -28,27 +30,19 @@ Some short term goals to help make AMNESIA more usable.
 
 #### Front End
 
-- [X] Darkmode
-- [X] Rework Interface: Minimal, Clean, Responsive
-- [ ] Multi-Room Landing: `EVENTS | AREAS | INTERESTS`
+- [ ] Multi-Room Landing Page
 - [ ] Text Fade: Chat messages slowly disappear
 - [ ] BUG: Fix Scrolling!
-- [ ] Moderator Overlay: Heatmaps and Session IDs
-
-#### General Chat Commands
-
-- [X] Colour Codes: change user id to predetermined colour
-- [ ] Region Codes: enable in-line region code
-- [X] ID Codes: enable random user id for session
 
 #### Abuse Mitigation
 
+- [ ] Tokens
+- [ ] Limit Sockets by IP
 - [ ] Auto Ban by IP
 - [ ] Ban Cooldown Timers
 
 #### Service
 
-- [X] Room User Limit
 - [ ] Room Full Redirect
 - [ ] Ban Redirect
 
@@ -57,6 +51,7 @@ Some short term goals to help make AMNESIA more usable.
 - [ ] Moderator Tokens: elevates user to moderator -- `!SECRETTOKEN|COMMANDS`
 - [ ] Global Rate-Limiting: slows down global chat -- `!SECRETTOKEN|SLOW|RATE`
 - [ ] Manual Ban: targets an offending user directly -- `!SECRETTOKEN|BAN|SESSIONID|TIME|REASON`
+- [ ] Moderator Overlay: Heatmaps and Session IDs
 
 ## License
 
