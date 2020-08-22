@@ -75,7 +75,7 @@ io.sockets.on('connection', function (socket) {
 
 });
 
-// Removes users from the session on disconnect
+// Removes users from the session on disconnect - Move to external module
 function removeUserlist(thisUser) {
   for (var i =0; i < sessionUsers.length; i++)
    if (sessionUsers[i].userID === thisUser.userID) {
@@ -83,6 +83,8 @@ function removeUserlist(thisUser) {
       break;
    }
 }
+
+// Rate limit per sessionID
 
 /*
 // clean this up and move it to an external module

@@ -6,11 +6,11 @@ A forgetful chat room with no long term memory.
 
 ## Description
 
-AMNESIA is a small anonymous chatroom project put together during the [2020 Covid-19 Lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Namibia) as a WebSocket learning exercise.
+AMNESIA is a small anonymous chatroom project put together during the [2020 Covid-19 Lockdown](https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Namibia) as a WebSocket learning exercise. 
 
 ## Getting Started
 
-The front was put together with only the most basic of Tailwind CSS. I did consider using Bulma or Tachyons and might try them out depending on which direction this project goes in. This is also my first project using any JavaScript, Node.js, Express.js and Socket.io.
+The front was put together with Tailwind CSS. I did consider using Bulma or Tachyons and might try them out depending on which direction this project goes in. This is also my first project using any JavaScript, Node.js, Express.js or Socket.io.
 
 ### Dependencies
 
@@ -38,7 +38,7 @@ Some short term goals to help make AMNESIA more usable.
 
 - [ ] Tokens
 - [ ] Limit Sockets by IP
-- [ ] Auto Ban by IP
+- [ ] Auto Ban by IP (Point System)
 - [ ] Ban Cooldown Timers
 
 #### Service

@@ -53,7 +53,6 @@ const names = [
 "purple",
 "indigo",
 "protest",
-"sleepy",
 "liquid",
 "king",
 "jester",
