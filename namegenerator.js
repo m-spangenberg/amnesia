@@ -46,7 +46,7 @@ const backgroundColours = [
 "bg-pink-400",
 "bg-pink-300",
 "bg-pink-200"
-]
+];
 
 // add about 50 more two syllable words
 const names = [
@@ -128,16 +128,16 @@ const names = [
 "control",
 "success",
 "thousand"
-]
+];
 
 function randomColourGrabber() {
-  let randomColour = backgroundColours.sort(() => .5 - Math.random()).slice(0,1)
-  return randomColour
-}
+  let randomColour = backgroundColours.sort(() => .5 - Math.random()).slice(0,1);
+  return randomColour;
+};
 
 function randomNameGenerator() {
-    let random = names.sort(() => .5 - Math.random()).slice(0,2)
-    let twoWords = random.join()
-    const randomUserID = twoWords.replace(',', '-')
+    let random = names.sort(() => .5 - Math.random()).slice(0,2);
+    let twoWords = random.join();
+    const randomUserID = twoWords.replace(',', '-');
     return randomUserID;
-}
+};

@@ -31,5 +31,12 @@ $(function () {
    socket.on('userCount', function(data){
       $('#userCounter').text(data);
    });
-      
+
+   socket.on('fullredirect', function(firehazard) {
+      window.location.href = firehazard;
+   });
+
+   socket.on('banredirect', function(healthhazard) {
+      window.location.href = healthhazard;
+   });
 });
