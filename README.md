@@ -19,39 +19,21 @@ The front was put together with Tailwind CSS. I did consider using Bulma or Tach
 * [Express.js](https://expressjs.com/)
 * [Socket.io](https://socket.io/)
 
-## Version History
-
-* 0.0.1
-    * Initial Deployment, Hello World!
-
 ## Roadmap
 
 Some short term goals to help make AMNESIA more usable.
 
 #### Front End
 
-- [ ] Multi-Room Landing Page
-- [ ] Text Fade: Chat messages slowly disappear
-- [ ] BUG: Fix Scrolling!
+- [ ] Landing Page
+- [ ] Public Rooms (Static)
+- [ ] BUG: Fix Scrolling
 
 #### Abuse Mitigation
 
 - [ ] Tokens
 - [ ] Limit Sockets by IP
-- [ ] Auto Ban by IP (Point System)
-- [ ] Ban Cooldown Timers
-
-#### Service
-
-- [ ] Room Full Redirect
-- [ ] Ban Redirect
-
-#### Moderation Tools
-
-- [ ] Moderator Tokens: elevates user to moderator -- `!SECRETTOKEN|COMMANDS`
-- [ ] Global Rate-Limiting: slows down global chat -- `!SECRETTOKEN|SLOW|RATE`
-- [ ] Manual Ban: targets an offending user directly -- `!SECRETTOKEN|BAN|SESSIONID|TIME|REASON`
-- [ ] Moderator Overlay: Heatmaps and Session IDs
+- [ ] Auto Ban (Point System)
 
 ## License
 
