@@ -19,20 +19,16 @@ The front was put together with Tailwind CSS. I did consider using Bulma or Tach
 * [Express.js](https://expressjs.com/)
 * [Socket.io](https://socket.io/)
 
-## Roadmap
-
-Some short term goals to help make AMNESIA more usable.
+## To-Do
 
 #### Front End
 
-- [ ] Landing Page
-- [ ] Public Rooms (Static)
 - [ ] BUG: Fix Scrolling
 
 #### Abuse Mitigation
 
 - [ ] Tokens
-- [ ] Limit Sockets by IP
+- [ ] Limit Sockets per IP
 - [ ] Auto Ban (Point System)
 
 ## License
