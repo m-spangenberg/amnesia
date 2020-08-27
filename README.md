@@ -27,8 +27,6 @@ The front was put together with Tailwind CSS. I did consider using Bulma or Tach
 
 #### Abuse Mitigation
 
-- [ ] Tokens
-- [ ] Limit Sockets per IP
 - [ ] Auto Ban (Point System)
 
 ## License
